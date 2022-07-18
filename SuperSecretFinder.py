@@ -5,7 +5,7 @@
 # by m4ll0k
 # https://github.com/m4ll0k
 # Additional Regex added by: Nullifidian
-# https://github.com/Nullifidian/SuperSecretFinder/SuperSecretFinder.py
+# https://github.com/Nullifidian/SuperSecretFinder/blob/main/SuperSecretFinder.py
 
 # Code Credits:
 # OpenSecurityResearch CustomPassiveScanner: https://github.com/OpenSecurityResearch/CustomPassiveScanner
