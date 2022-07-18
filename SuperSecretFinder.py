@@ -25,7 +25,7 @@ import xml.sax.saxutils as saxutils
 class BurpExtender(IBurpExtender, IScannerCheck):
     def	registerExtenderCallbacks(self, callbacks):
         self._callbacks = callbacks
-        self._callbacks.setExtensionName("SecretFinder")
+        self._callbacks.setExtensionName("SuperSecretFinder")
         self._callbacks.registerScannerCheck(self)
         return
 
@@ -225,7 +225,7 @@ class BurpExtender(IBurpExtender, IScannerCheck):
         'google_oauth' : 'ya29\.[0-9A-Za-z\-_]+'
     }
     regex = r"[:|=|\'|\"|\s*|`|´| |,|?=|\]|\|//|/\*}](%%regex%%)[:|=|\'|\"|\s*|`|´| |,|?=|\]|\}|&|//|\*/]"
-    issuename = "SecretFinder: %s"
+    issuename = "SuperSecretFinder: %s"
     issuelevel = "Information"
     issuedetail = r"""Potential Secret Find: <b>%%regex%%</b>
     <br><br><b>Note:</b> Please note that some of these issues could be false positives, a manual review is recommended."""
